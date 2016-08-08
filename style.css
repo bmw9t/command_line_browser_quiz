@@ -37,3 +37,8 @@ body{
        position: relative;
        left: -50%;
 }
+
+#sub-title{
+    text-align: center;
+    padding-top: 15px;
+}
