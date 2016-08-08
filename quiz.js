@@ -38,7 +38,7 @@ function generate_prompt(use_case){
 			$("#prompt").append("Correct! Here is another.<br>");
 			break;
 		case "input":
-			$("#prompt").append("<div id=\"prompt_cursor\">></div> <form id=\"target\"><input type=\"text\" name=\"response\" autofocus><br>");
+			$("#prompt").append("<div id=\"prompt_cursor\">></div> <form id=\"target\"><input type=\"text\" name=\"response\" class=\"auto-focus\" autofocus><br>");
 			break;
 		case "incorrect answer":
 			$("#prompt").append("Incorrect. Type out the correct answer to practice - <br>");
@@ -59,7 +59,6 @@ function shuffle(a) {
     }
     return a;
 }
-
 function quiz(key_terms){
 	console.log(key_terms.length);
 	key_terms = shuffle(key_terms);
@@ -68,6 +67,7 @@ function quiz(key_terms){
 	generate_prompt("quiz prompt");
 	$("#prompt").append(question + "<br>");
 	generate_prompt("input");
+	$(".auto-focus").focus();
 	$("#target").submit(function(event){
 		event.preventDefault();
 		var response = $("input:first").val();
@@ -94,6 +94,8 @@ function evaluate_response(key_terms, response, answer){
 		generate_prompt("incorrect answer");
 		$("#prompt").append(answer + "<br>");
 		generate_prompt("input");
+			$(".auto-focus").focus();
+
 		$("#target").submit(function(event){
 			event.preventDefault();
 			$("#prompt").text("");

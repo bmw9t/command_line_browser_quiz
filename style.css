@@ -1,12 +1,18 @@
 #prompt_cursor{
     float: left;
 }
+
 #prompt{
+    margin-top: 100px;
     max-width: 500px;
+    min-width: 500px;
     background-color: black;
     min-height: 300;
     color: lightgray;
+    border-radius: 10px;
+    padding: 20px;
 }
+
 input{
     background-color: black;
     color: lightgray;
@@ -15,6 +21,19 @@ input{
     border-right: none;
     border-left: none;
 }
+
 body{
     background-color:lightgray;
+}
+
+.center-outer{
+       float: left;
+       position: relative;
+       left: 50%;
+}
+
+.center-inner{
+         float: left;
+       position: relative;
+       left: -50%;
 }
