@@ -1,0 +1,20 @@
+#prompt_cursor{
+    float: left;
+}
+#prompt{
+    max-width: 500px;
+    background-color: black;
+    min-height: 300;
+    color: lightgray;
+}
+input{
+    background-color: black;
+    color: lightgray;
+    border-top: none;
+    border-bottom: 2px inset lightgray;
+    border-right: none;
+    border-left: none;
+}
+body{
+    background-color:lightgray;
+}
