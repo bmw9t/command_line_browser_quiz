@@ -1,5 +1,7 @@
 var terms = {"answers":[
-	{"pwd": "print working directory"}, 
+	{"pwd": "print working directory"},
+	{"cd ..": "move up one directory"},
+	{"~": "shorthand for /Users/myusername"}, 
 	{"hostname": "my computer's network name"},
 	{"mkdir": "make directory"}, 
 	{"cd": "change directory"}, 

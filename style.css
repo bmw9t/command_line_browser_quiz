@@ -3,7 +3,7 @@
 }
 
 #prompt{
-    margin-top: 100px;
+    margin-top: 80px;
     max-width: 500px;
     min-width: 500px;
     background-color: black;
@@ -38,7 +38,7 @@ body{
        left: -50%;
 }
 
-#sub-title{
+#sub-title, #blurb{
     text-align: center;
     padding-top: 15px;
 }
