@@ -38,7 +38,7 @@ body{
        left: -50%;
 }
 
-#sub-title, #blurb{
+#sub-title, #blurb, #description{
     text-align: center;
     padding-top: 15px;
 }
